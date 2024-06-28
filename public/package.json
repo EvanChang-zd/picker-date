@@ -1,6 +1,6 @@
 {
   "name": "picker-date",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "picker-date",
   "main": "picker-date.js",
   "types": "index.d.ts",
