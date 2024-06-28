@@ -35,6 +35,7 @@
     style="width: 254px; margin-bottom: 20px"
   />
   <br />
+  <configProvider :locale="arEG">
   <rangePicker
     showTime
     :time-picker-props="{
@@ -44,13 +45,14 @@
     @select="onSelect"
     style="width: 380px"
   />
+  </configProvider>
   </div>
 </template>
 
 <script setup>
-import { rangePicker, picker, configProvider } from '../packages/date-picker/index.js'
+import { rangePicker, picker, configProvider, lang} from '../packages/date-picker/index.js'
 import '../packages/date-picker/src/index.css'
-
+const arEG = lang['en-US']
 const onSelect = (dateString, date) => {
   console.log('onSelect', dateString, date)
 }

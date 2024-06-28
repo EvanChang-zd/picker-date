@@ -1,12 +1,12 @@
 import { App } from "vue";
 // 导入单个组件
-import { rangePicker, picker, configProvider } from "./date-picker/index.js";
+import { rangePicker, picker, configProvider, lang } from "./date-picker/index.js";
 import "./date-picker/src/index.css";
 // 以数组的结构保存组件，便于遍历
 const components = [rangePicker, picker, configProvider];
 
 // 用于按需导入
-export { rangePicker, picker, configProvider };
+export { rangePicker, picker, configProvider, lang };
 
 export const install = (app: App) => {
   if ((install as any).installed) return;
