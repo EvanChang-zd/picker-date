@@ -1,0 +1,186 @@
+/******** 基础配置项 end *******/
+/******** 基础配置项 end *******/
+/******** 高级配置项 *******/
+/******** 高级配置项 end *******/
+/******** borderSize *******/
+/******** borderStyle *******/
+/******** radius *******/
+/******** shadow distance *******/
+/******** size *******/
+/******** spacing *******/
+/******** shadow *******/
+/******** opacity *******/
+/******** fontSize *******/
+/******** fontWeight ********/
+/******** Primary *******/
+/******** success *******/
+/******** warning *******/
+/******** danger *******/
+/******** link *******/
+/******** radius *******/
+/********* icon hover *********/
+.xiaolaji-picker {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4px 11px 4px 4px;
+  line-height: 1.5715;
+  background-color: var(--color-fill-2);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-small);
+  transition: all 0.1s cubic-bezier(0, 0, 1, 1);
+}
+.xiaolaji-picker-input {
+  display: inline-flex;
+  flex: 1;
+}
+.xiaolaji-picker input {
+  width: 100%;
+  padding: 0;
+  padding-left: 8px;
+  color: var(--color-text-2);
+  line-height: 1.5715;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: all 0.1s cubic-bezier(0, 0, 1, 1);
+}
+.xiaolaji-picker input::placeholder {
+  color: var(--color-text-3);
+}
+.xiaolaji-picker input[disabled] {
+  -webkit-text-fill-color: var(--color-text-4);
+}
+.xiaolaji-picker-has-prefix {
+  padding-left: 12px;
+}
+.xiaolaji-picker-prefix {
+  padding-right: 4px;
+  color: var(--color-text-2);
+  font-size: 14px;
+}
+.xiaolaji-picker-suffix {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon {
+  display: inline-flex;
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon-status-validating {
+  color: rgb(var(--primary-6));
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon-status-success {
+  color: rgb(var(--success-6));
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon-status-warning {
+  color: rgb(var(--warning-6));
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon-status-error {
+  color: rgb(var(--danger-6));
+}
+.xiaolaji-picker-suffix .xiaolaji-feedback-icon {
+  margin-left: 4px;
+}
+.xiaolaji-picker-suffix-icon {
+  color: var(--color-text-2);
+}
+.xiaolaji-picker .xiaolaji-picker-clear-icon {
+  display: none;
+  color: var(--color-text-2);
+  font-size: 12px;
+}
+.xiaolaji-picker:hover {
+  background-color: var(--color-fill-3);
+  border-color: transparent;
+}
+.xiaolaji-picker:not(.xiaolaji-picker-disabled):hover .xiaolaji-picker-clear-icon {
+  display: inline-block;
+}
+.xiaolaji-picker:not(.xiaolaji-picker-disabled):hover .xiaolaji-picker-suffix .xiaolaji-picker-clear-icon + span {
+  display: none;
+}
+.xiaolaji-picker input[disabled] {
+  color: var(--color-text-4);
+  cursor: not-allowed;
+}
+.xiaolaji-picker input[disabled]::placeholder {
+  color: var(--color-text-4);
+}
+.xiaolaji-picker-error {
+  background-color: var(--color-danger-light-1);
+  border-color: transparent;
+}
+.xiaolaji-picker-error:hover {
+  background-color: var(--color-danger-light-2);
+  border-color: transparent;
+}
+.xiaolaji-picker-focused {
+  box-shadow: 0 0 0 0 var(--color-primary-light-2);
+}
+.xiaolaji-picker-focused,
+.xiaolaji-picker-focused:hover {
+  background-color: var(--color-bg-2);
+  border-color: rgb(var(--primary-6));
+}
+.xiaolaji-picker-focused.xiaolaji-picker-error {
+  border-color: rgb(var(--danger-6));
+  box-shadow: 0 0 0 0 var(--color-danger-light-2);
+}
+.xiaolaji-picker-focused .xiaolaji-picker-input-active input,
+.xiaolaji-picker-focused:hover .xiaolaji-picker-input-active input {
+  background: var(--color-fill-2);
+}
+.xiaolaji-picker-disabled,
+.xiaolaji-picker-disabled:hover {
+  color: var(--color-text-4);
+  background-color: var(--color-fill-2);
+  border-color: transparent;
+  cursor: not-allowed;
+}
+.xiaolaji-picker-disabled input[disabled],
+.xiaolaji-picker-disabled:hover input[disabled] {
+  color: var(--color-text-4);
+  cursor: not-allowed;
+}
+.xiaolaji-picker-disabled input[disabled]::placeholder,
+.xiaolaji-picker-disabled:hover input[disabled]::placeholder {
+  color: var(--color-text-4);
+}
+.xiaolaji-picker-separator {
+  min-width: 10px;
+  padding: 0 8px;
+  color: var(--color-text-3);
+}
+.xiaolaji-picker-disabled .xiaolaji-picker-separator {
+  color: var(--color-text-4);
+}
+.xiaolaji-picker-disabled .xiaolaji-picker-suffix-icon {
+  color: var(--color-text-4);
+}
+.xiaolaji-picker-size-mini {
+  height: 24px;
+}
+.xiaolaji-picker-size-mini input {
+  font-size: 12px;
+}
+.xiaolaji-picker-size-small {
+  height: 28px;
+}
+.xiaolaji-picker-size-small input {
+  font-size: 14px;
+}
+.xiaolaji-picker-size-medium {
+  height: 32px;
+}
+.xiaolaji-picker-size-medium input {
+  font-size: 14px;
+}
+.xiaolaji-picker-size-large {
+  height: 36px;
+}
+.xiaolaji-picker-size-large input {
+  font-size: 14px;
+}

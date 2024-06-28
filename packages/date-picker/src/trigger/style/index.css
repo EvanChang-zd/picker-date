@@ -1,0 +1,62 @@
+/******** borderSize *******/
+/******** borderStyle *******/
+/******** radius *******/
+/******** shadow distance *******/
+/******** size *******/
+/******** spacing *******/
+/******** shadow *******/
+/******** opacity *******/
+/******** fontSize *******/
+/******** fontWeight ********/
+/******** Primary *******/
+/******** success *******/
+/******** warning *******/
+/******** danger *******/
+/******** link *******/
+/******** radius *******/
+/********* icon hover *********/
+.xiaolaji-trigger-wrapper {
+  display: inline-block;
+}
+.xiaolaji-trigger-popup {
+  position: absolute;
+  z-index: 1000;
+}
+.xiaolaji-trigger-arrow {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-bg-5);
+  content: '';
+}
+.xiaolaji-trigger-popup[trigger-placement='top'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='tl'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='tr'] .xiaolaji-trigger-arrow {
+  border-top: none;
+  border-left: none;
+  border-bottom-right-radius: var(--border-radius-small);
+}
+.xiaolaji-trigger-popup[trigger-placement='bottom'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='bl'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='br'] .xiaolaji-trigger-arrow {
+  border-right: none;
+  border-bottom: none;
+  border-top-left-radius: var(--border-radius-small);
+}
+.xiaolaji-trigger-popup[trigger-placement='left'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='lt'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='lb'] .xiaolaji-trigger-arrow {
+  border-bottom: none;
+  border-left: none;
+  border-top-right-radius: var(--border-radius-small);
+}
+.xiaolaji-trigger-popup[trigger-placement='right'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='rt'] .xiaolaji-trigger-arrow,
+.xiaolaji-trigger-popup[trigger-placement='rb'] .xiaolaji-trigger-arrow {
+  border-top: none;
+  border-right: none;
+  border-bottom-left-radius: var(--border-radius-small);
+}

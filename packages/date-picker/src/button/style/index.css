@@ -1,0 +1,888 @@
+/******** borderSize *******/
+/******** borderStyle *******/
+/******** radius *******/
+/******** shadow distance *******/
+/******** size *******/
+/******** spacing *******/
+/******** shadow *******/
+/******** opacity *******/
+/******** fontSize *******/
+/******** fontWeight ********/
+/******** Primary *******/
+/******** success *******/
+/******** warning *******/
+/******** danger *******/
+/******** link *******/
+/******** radius *******/
+/********* icon hover *********/
+/***** Outline *****/
+/***** Primary *****/
+/***** Secondary *****/
+/***** Dashed *****/
+/***** Text *****/
+/***** focus-visible *****/
+.xiaolaji-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.5715;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.1s cubic-bezier(0, 0, 1, 1);
+  -webkit-appearance: none;
+  user-select: none;
+}
+.xiaolaji-btn > a:only-child {
+  color: currentColor;
+}
+.xiaolaji-btn:active {
+  transition: none;
+}
+.xiaolaji-btn-long {
+  display: flex;
+  width: 100%;
+}
+.xiaolaji-btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.xiaolaji-btn-link:not([href]) {
+  color: var(--color-text-4);
+}
+.xiaolaji-btn-link:hover {
+  text-decoration: none;
+}
+.xiaolaji-btn-link.xiaolaji-btn-only-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+}
+.xiaolaji-btn.xiaolaji-btn-only-icon .xiaolaji-btn-icon {
+  display: flex;
+  justify-content: center;
+}
+.xiaolaji-btn-loading {
+  position: relative;
+  cursor: default;
+}
+.xiaolaji-btn-loading::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1;
+  display: block;
+  background: #fff;
+  border-radius: inherit;
+  opacity: 0.4;
+  transition: opacity 0.1s cubic-bezier(0, 0, 1, 1);
+  content: '';
+  pointer-events: none;
+}
+.xiaolaji-btn-loading-fixed-width {
+  transition: none;
+}
+.xiaolaji-btn-two-chinese-chars > *:not(svg) {
+  margin-right: -0.3em;
+  letter-spacing: 0.3em;
+}
+.xiaolaji-btn-outline,
+.xiaolaji-btn-outline[type='button'],
+.xiaolaji-btn-outline[type='submit'] {
+  color: rgb(var(--primary-6));
+  background-color: transparent;
+  border: 1px solid rgb(var(--primary-6));
+}
+.xiaolaji-btn-outline:hover,
+.xiaolaji-btn-outline[type='button']:hover,
+.xiaolaji-btn-outline[type='submit']:hover {
+  color: rgb(var(--primary-5));
+  background-color: transparent;
+  border-color: rgb(var(--primary-5));
+}
+.xiaolaji-btn-outline:focus-visible,
+.xiaolaji-btn-outline[type='button']:focus-visible,
+.xiaolaji-btn-outline[type='submit']:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--primary-3));
+}
+.xiaolaji-btn-outline:active,
+.xiaolaji-btn-outline[type='button']:active,
+.xiaolaji-btn-outline[type='submit']:active {
+  color: rgb(var(--primary-7));
+  background-color: transparent;
+  border-color: rgb(var(--primary-7));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-loading,
+.xiaolaji-btn-outline[type='button'].xiaolaji-btn-loading,
+.xiaolaji-btn-outline[type='submit'].xiaolaji-btn-loading {
+  color: rgb(var(--primary-6));
+  background-color: transparent;
+  border: 1px solid rgb(var(--primary-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-disabled,
+.xiaolaji-btn-outline[type='button'].xiaolaji-btn-disabled,
+.xiaolaji-btn-outline[type='submit'].xiaolaji-btn-disabled {
+  color: var(--color-primary-light-3);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-light-3);
+  cursor: not-allowed;
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning {
+  color: rgb(var(--warning-6));
+  background-color: transparent;
+  border-color: rgb(var(--warning-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning:hover {
+  color: rgb(var(--warning-5));
+  background-color: transparent;
+  border-color: rgb(var(--warning-5));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--warning-3));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning:active {
+  color: rgb(var(--warning-7));
+  background-color: transparent;
+  border-color: rgb(var(--warning-7));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning.xiaolaji-btn-loading {
+  color: rgb(var(--warning-6));
+  background-color: transparent;
+  border-color: rgb(var(--warning-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-warning.xiaolaji-btn-disabled {
+  color: var(--color-warning-light-3);
+  background-color: transparent;
+  border: 1px solid var(--color-warning-light-3);
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger {
+  color: rgb(var(--danger-6));
+  background-color: transparent;
+  border-color: rgb(var(--danger-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger:hover {
+  color: rgb(var(--danger-5));
+  background-color: transparent;
+  border-color: rgb(var(--danger-5));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--danger-3));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger:active {
+  color: rgb(var(--danger-7));
+  background-color: transparent;
+  border-color: rgb(var(--danger-7));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger.xiaolaji-btn-loading {
+  color: rgb(var(--danger-6));
+  background-color: transparent;
+  border-color: rgb(var(--danger-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-danger.xiaolaji-btn-disabled {
+  color: var(--color-danger-light-3);
+  background-color: transparent;
+  border: 1px solid var(--color-danger-light-3);
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success {
+  color: rgb(var(--success-6));
+  background-color: transparent;
+  border-color: rgb(var(--success-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success:hover {
+  color: rgb(var(--success-5));
+  background-color: transparent;
+  border-color: rgb(var(--success-5));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--success-3));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success:active {
+  color: rgb(var(--success-7));
+  background-color: transparent;
+  border-color: rgb(var(--success-7));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success.xiaolaji-btn-loading {
+  color: rgb(var(--success-6));
+  background-color: transparent;
+  border-color: rgb(var(--success-6));
+}
+.xiaolaji-btn-outline.xiaolaji-btn-status-success.xiaolaji-btn-disabled {
+  color: var(--color-success-light-3);
+  background-color: transparent;
+  border: 1px solid var(--color-success-light-3);
+}
+.xiaolaji-btn-primary,
+.xiaolaji-btn-primary[type='button'],
+.xiaolaji-btn-primary[type='submit'] {
+  color: #fff;
+  background-color: rgb(var(--primary-6));
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-primary:hover,
+.xiaolaji-btn-primary[type='button']:hover,
+.xiaolaji-btn-primary[type='submit']:hover {
+  color: #fff;
+  background-color: rgb(var(--primary-5));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary:focus-visible,
+.xiaolaji-btn-primary[type='button']:focus-visible,
+.xiaolaji-btn-primary[type='submit']:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--primary-3));
+}
+.xiaolaji-btn-primary:active,
+.xiaolaji-btn-primary[type='button']:active,
+.xiaolaji-btn-primary[type='submit']:active {
+  color: #fff;
+  background-color: rgb(var(--primary-7));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-loading,
+.xiaolaji-btn-primary[type='button'].xiaolaji-btn-loading,
+.xiaolaji-btn-primary[type='submit'].xiaolaji-btn-loading {
+  color: #fff;
+  background-color: rgb(var(--primary-6));
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-disabled,
+.xiaolaji-btn-primary[type='button'].xiaolaji-btn-disabled,
+.xiaolaji-btn-primary[type='submit'].xiaolaji-btn-disabled {
+  color: #fff;
+  background-color: var(--color-primary-light-3);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning {
+  color: #fff;
+  background-color: rgb(var(--warning-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning:hover {
+  color: #fff;
+  background-color: rgb(var(--warning-5));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--warning-3));
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning:active {
+  color: #fff;
+  background-color: rgb(var(--warning-7));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning.xiaolaji-btn-loading {
+  color: #fff;
+  background-color: rgb(var(--warning-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-warning.xiaolaji-btn-disabled {
+  color: #fff;
+  background-color: var(--color-warning-light-3);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger {
+  color: #fff;
+  background-color: rgb(var(--danger-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger:hover {
+  color: #fff;
+  background-color: rgb(var(--danger-5));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--danger-3));
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger:active {
+  color: #fff;
+  background-color: rgb(var(--danger-7));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger.xiaolaji-btn-loading {
+  color: #fff;
+  background-color: rgb(var(--danger-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-danger.xiaolaji-btn-disabled {
+  color: #fff;
+  background-color: var(--color-danger-light-3);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success {
+  color: #fff;
+  background-color: rgb(var(--success-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success:hover {
+  color: #fff;
+  background-color: rgb(var(--success-5));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--success-3));
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success:active {
+  color: #fff;
+  background-color: rgb(var(--success-7));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success.xiaolaji-btn-loading {
+  color: #fff;
+  background-color: rgb(var(--success-6));
+  border-color: transparent;
+}
+.xiaolaji-btn-primary.xiaolaji-btn-status-success.xiaolaji-btn-disabled {
+  color: #fff;
+  background-color: var(--color-success-light-3);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-secondary,
+.xiaolaji-btn-secondary[type='button'],
+.xiaolaji-btn-secondary[type='submit'] {
+  color: var(--color-text-2);
+  background-color: var(--color-secondary);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-secondary:hover,
+.xiaolaji-btn-secondary[type='button']:hover,
+.xiaolaji-btn-secondary[type='submit']:hover {
+  color: var(--color-text-2);
+  background-color: var(--color-secondary-hover);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary:focus-visible,
+.xiaolaji-btn-secondary[type='button']:focus-visible,
+.xiaolaji-btn-secondary[type='submit']:focus-visible {
+  box-shadow: 0 0 0 0.25em var(--color-neutral-4);
+}
+.xiaolaji-btn-secondary:active,
+.xiaolaji-btn-secondary[type='button']:active,
+.xiaolaji-btn-secondary[type='submit']:active {
+  color: var(--color-text-2);
+  background-color: var(--color-secondary-active);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-loading,
+.xiaolaji-btn-secondary[type='button'].xiaolaji-btn-loading,
+.xiaolaji-btn-secondary[type='submit'].xiaolaji-btn-loading {
+  color: var(--color-text-2);
+  background-color: var(--color-secondary);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-disabled,
+.xiaolaji-btn-secondary[type='button'].xiaolaji-btn-disabled,
+.xiaolaji-btn-secondary[type='submit'].xiaolaji-btn-disabled {
+  color: var(--color-text-4);
+  background-color: var(--color-secondary-disabled);
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning:hover {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--warning-3));
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning:active {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning.xiaolaji-btn-loading {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-warning.xiaolaji-btn-disabled {
+  color: var(--color-warning-light-3);
+  background-color: var(--color-warning-light-1);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger:hover {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--danger-3));
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger:active {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger.xiaolaji-btn-loading {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-danger.xiaolaji-btn-disabled {
+  color: var(--color-danger-light-3);
+  background-color: var(--color-danger-light-1);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success:hover {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--success-3));
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success:active {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success.xiaolaji-btn-loading {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-1);
+  border-color: transparent;
+}
+.xiaolaji-btn-secondary.xiaolaji-btn-status-success.xiaolaji-btn-disabled {
+  color: var(--color-success-light-3);
+  background-color: var(--color-success-light-1);
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-dashed,
+.xiaolaji-btn-dashed[type='button'],
+.xiaolaji-btn-dashed[type='submit'] {
+  color: var(--color-text-2);
+  background-color: var(--color-fill-2);
+  border: 1px dashed var(--color-neutral-3);
+}
+.xiaolaji-btn-dashed:hover,
+.xiaolaji-btn-dashed[type='button']:hover,
+.xiaolaji-btn-dashed[type='submit']:hover {
+  color: var(--color-text-2);
+  background-color: var(--color-fill-3);
+  border-color: var(--color-neutral-4);
+}
+.xiaolaji-btn-dashed:focus-visible,
+.xiaolaji-btn-dashed[type='button']:focus-visible,
+.xiaolaji-btn-dashed[type='submit']:focus-visible {
+  box-shadow: 0 0 0 0.25em var(--color-neutral-4);
+}
+.xiaolaji-btn-dashed:active,
+.xiaolaji-btn-dashed[type='button']:active,
+.xiaolaji-btn-dashed[type='submit']:active {
+  color: var(--color-text-2);
+  background-color: var(--color-fill-4);
+  border-color: var(--color-neutral-5);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-loading,
+.xiaolaji-btn-dashed[type='button'].xiaolaji-btn-loading,
+.xiaolaji-btn-dashed[type='submit'].xiaolaji-btn-loading {
+  color: var(--color-text-2);
+  background-color: var(--color-fill-2);
+  border: 1px dashed var(--color-neutral-3);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-disabled,
+.xiaolaji-btn-dashed[type='button'].xiaolaji-btn-disabled,
+.xiaolaji-btn-dashed[type='submit'].xiaolaji-btn-disabled {
+  color: var(--color-text-4);
+  background-color: var(--color-fill-2);
+  border: 1px dashed var(--color-neutral-3);
+  cursor: not-allowed;
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-1);
+  border-color: var(--color-warning-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning:hover {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-2);
+  border-color: var(--color-warning-light-3);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--warning-3));
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning:active {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-3);
+  border-color: var(--color-warning-light-4);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning.xiaolaji-btn-loading {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-warning-light-1);
+  border-color: var(--color-warning-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-warning.xiaolaji-btn-disabled {
+  color: var(--color-warning-light-3);
+  background-color: var(--color-warning-light-1);
+  border: 1px dashed var(--color-warning-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-1);
+  border-color: var(--color-danger-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger:hover {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-2);
+  border-color: var(--color-danger-light-3);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--danger-3));
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger:active {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-3);
+  border-color: var(--color-danger-light-4);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger.xiaolaji-btn-loading {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-danger-light-1);
+  border-color: var(--color-danger-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-danger.xiaolaji-btn-disabled {
+  color: var(--color-danger-light-3);
+  background-color: var(--color-danger-light-1);
+  border: 1px dashed var(--color-danger-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-1);
+  border-color: var(--color-success-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success:hover {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-2);
+  border-color: var(--color-success-light-3);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--success-3));
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success:active {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-3);
+  border-color: var(--color-success-light-4);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success.xiaolaji-btn-loading {
+  color: rgb(var(--success-6));
+  background-color: var(--color-success-light-1);
+  border-color: var(--color-success-light-2);
+}
+.xiaolaji-btn-dashed.xiaolaji-btn-status-success.xiaolaji-btn-disabled {
+  color: var(--color-success-light-3);
+  background-color: var(--color-success-light-1);
+  border: 1px dashed var(--color-success-light-2);
+}
+.xiaolaji-btn-text,
+.xiaolaji-btn-text[type='button'],
+.xiaolaji-btn-text[type='submit'] {
+  color: rgb(var(--primary-6));
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-text:hover,
+.xiaolaji-btn-text[type='button']:hover,
+.xiaolaji-btn-text[type='submit']:hover {
+  color: rgb(var(--primary-6));
+  background-color: var(--color-fill-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-text:focus-visible,
+.xiaolaji-btn-text[type='button']:focus-visible,
+.xiaolaji-btn-text[type='submit']:focus-visible {
+  box-shadow: 0 0 0 0.25em var(--color-neutral-4);
+}
+.xiaolaji-btn-text:active,
+.xiaolaji-btn-text[type='button']:active,
+.xiaolaji-btn-text[type='submit']:active {
+  color: rgb(var(--primary-6));
+  background-color: var(--color-fill-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-loading,
+.xiaolaji-btn-text[type='button'].xiaolaji-btn-loading,
+.xiaolaji-btn-text[type='submit'].xiaolaji-btn-loading {
+  color: rgb(var(--primary-6));
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-disabled,
+.xiaolaji-btn-text[type='button'].xiaolaji-btn-disabled,
+.xiaolaji-btn-text[type='submit'].xiaolaji-btn-disabled {
+  color: var(--color-primary-light-3);
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: not-allowed;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning {
+  color: rgb(var(--warning-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning:hover {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-fill-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--warning-3));
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning:active {
+  color: rgb(var(--warning-6));
+  background-color: var(--color-fill-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning.xiaolaji-btn-loading {
+  color: rgb(var(--warning-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-warning.xiaolaji-btn-disabled {
+  color: var(--color-warning-light-3);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger {
+  color: rgb(var(--danger-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger:hover {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-fill-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--danger-3));
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger:active {
+  color: rgb(var(--danger-6));
+  background-color: var(--color-fill-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger.xiaolaji-btn-loading {
+  color: rgb(var(--danger-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-danger.xiaolaji-btn-disabled {
+  color: var(--color-danger-light-3);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success {
+  color: rgb(var(--success-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success:hover {
+  color: rgb(var(--success-6));
+  background-color: var(--color-fill-2);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success:focus-visible {
+  box-shadow: 0 0 0 0.25em rgb(var(--success-3));
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success:active {
+  color: rgb(var(--success-6));
+  background-color: var(--color-fill-3);
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success.xiaolaji-btn-loading {
+  color: rgb(var(--success-6));
+  background-color: transparent;
+  border-color: transparent;
+}
+.xiaolaji-btn-text.xiaolaji-btn-status-success.xiaolaji-btn-disabled {
+  color: var(--color-success-light-3);
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.xiaolaji-btn-size-mini {
+  height: 24px;
+  padding: 0 11px;
+  font-size: 12px;
+  border-radius: var(--border-radius-small);
+}
+.xiaolaji-btn-size-mini:not(.xiaolaji-btn-only-icon) .xiaolaji-btn-icon {
+  margin-right: 4px;
+}
+.xiaolaji-btn-size-mini svg {
+  vertical-align: -1px;
+}
+.xiaolaji-btn-size-mini.xiaolaji-btn-loading-fixed-width.xiaolaji-btn-loading {
+  padding-right: 3px;
+  padding-left: 3px;
+}
+.xiaolaji-btn-size-mini.xiaolaji-btn-only-icon {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+.xiaolaji-btn-size-mini.xiaolaji-btn-shape-circle {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  text-align: center;
+  border-radius: var(--border-radius-circle);
+}
+.xiaolaji-btn-size-mini.xiaolaji-btn-shape-round {
+  border-radius: calc(24px * 0.5);
+}
+.xiaolaji-btn-size-small {
+  height: 28px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: var(--border-radius-small);
+}
+.xiaolaji-btn-size-small:not(.xiaolaji-btn-only-icon) .xiaolaji-btn-icon {
+  margin-right: 6px;
+}
+.xiaolaji-btn-size-small svg {
+  vertical-align: -2px;
+}
+.xiaolaji-btn-size-small.xiaolaji-btn-loading-fixed-width.xiaolaji-btn-loading {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.xiaolaji-btn-size-small.xiaolaji-btn-only-icon {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+}
+.xiaolaji-btn-size-small.xiaolaji-btn-shape-circle {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  text-align: center;
+  border-radius: var(--border-radius-circle);
+}
+.xiaolaji-btn-size-small.xiaolaji-btn-shape-round {
+  border-radius: calc(28px * 0.5);
+}
+.xiaolaji-btn-size-medium {
+  height: 32px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: var(--border-radius-small);
+}
+.xiaolaji-btn-size-medium:not(.xiaolaji-btn-only-icon) .xiaolaji-btn-icon {
+  margin-right: 8px;
+}
+.xiaolaji-btn-size-medium svg {
+  vertical-align: -2px;
+}
+.xiaolaji-btn-size-medium.xiaolaji-btn-loading-fixed-width.xiaolaji-btn-loading {
+  padding-right: 4px;
+  padding-left: 4px;
+}
+.xiaolaji-btn-size-medium.xiaolaji-btn-only-icon {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+.xiaolaji-btn-size-medium.xiaolaji-btn-shape-circle {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  border-radius: var(--border-radius-circle);
+}
+.xiaolaji-btn-size-medium.xiaolaji-btn-shape-round {
+  border-radius: calc(32px * 0.5);
+}
+.xiaolaji-btn-size-large {
+  height: 36px;
+  padding: 0 19px;
+  font-size: 14px;
+  border-radius: var(--border-radius-small);
+}
+.xiaolaji-btn-size-large:not(.xiaolaji-btn-only-icon) .xiaolaji-btn-icon {
+  margin-right: 8px;
+}
+.xiaolaji-btn-size-large svg {
+  vertical-align: -2px;
+}
+.xiaolaji-btn-size-large.xiaolaji-btn-loading-fixed-width.xiaolaji-btn-loading {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.xiaolaji-btn-size-large.xiaolaji-btn-only-icon {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+}
+.xiaolaji-btn-size-large.xiaolaji-btn-shape-circle {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  text-align: center;
+  border-radius: var(--border-radius-circle);
+}
+.xiaolaji-btn-size-large.xiaolaji-btn-shape-round {
+  border-radius: calc(36px * 0.5);
+}
+.xiaolaji-btn-group {
+  display: inline-flex;
+  align-items: center;
+}
+.xiaolaji-btn-group .xiaolaji-btn-outline:not(:first-child),
+.xiaolaji-btn-group .xiaolaji-btn-dashed:not(:first-child) {
+  margin-left: -1px;
+}
+.xiaolaji-btn-group .xiaolaji-btn-primary:not(:last-child) {
+  border-right: 1px solid rgb(var(--primary-5));
+}
+.xiaolaji-btn-group .xiaolaji-btn-secondary:not(:last-child) {
+  border-right: 1px solid var(--color-secondary-hover);
+}
+.xiaolaji-btn-group .xiaolaji-btn-status-warning:not(:last-child) {
+  border-right: 1px solid rgb(var(--warning-5));
+}
+.xiaolaji-btn-group .xiaolaji-btn-status-danger:not(:last-child) {
+  border-right: 1px solid rgb(var(--danger-5));
+}
+.xiaolaji-btn-group .xiaolaji-btn-status-success:not(:last-child) {
+  border-right: 1px solid rgb(var(--success-5));
+}
+.xiaolaji-btn-group .xiaolaji-btn-outline:hover,
+.xiaolaji-btn-group .xiaolaji-btn-dashed:hover,
+.xiaolaji-btn-group .xiaolaji-btn-outline:active,
+.xiaolaji-btn-group .xiaolaji-btn-dashed:active {
+  z-index: 2;
+}
+.xiaolaji-btn-group .xiaolaji-btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.xiaolaji-btn-group .xiaolaji-btn:last-child {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.xiaolaji-btn-group .xiaolaji-btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+body[xiaolaji-theme='dark'] .xiaolaji-btn-primary.xiaolaji-btn-disabled {
+  color: rgba(255, 255, 255, 0.3);
+}
