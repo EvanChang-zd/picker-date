@@ -1,7 +1,8 @@
 {
   "name": "picker-date",
   "private": true,
-  "version": "0.0.8",
+  "version": "0.1.0",
+  "description": "Vue3 日期周选择器",
   "type": "module",
   "scripts": {
     "dev": "vite",

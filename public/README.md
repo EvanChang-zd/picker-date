@@ -1,6 +1,6 @@
 # prcker-date
 
-
+日期周选择器
 
 ## 使用案例
 
@@ -20,8 +20,33 @@ import 'picker-date/style.css'
 ~~~
 
 共暴露三个组件 rangePicker, picker, configProvider
+国际化使用案例
+~~~js
+<template>
+  <div>
+  <configProvider :locale="arEG">
+  <rangePicker
+    showTime
+    :time-picker-props="{
+      defaultValue: ['00:00:00', '00:00:00']
+    }"
+    style="width: 380px"
+  />
+  </configProvider>
+  </div>
+</template>
 
+<script setup>
+import { rangePicker, picker, configProvider, lang } from 'picker-date'
+import 'picker-date/style.css'
+const arEG = lang['en-US']
+</script>
+~~~
 
+## 深色主题设置
+~~~js
+document.body.setAttribute('xiaolaji-theme', 'dark')
+~~~
 
 ## 浏览器支持
 

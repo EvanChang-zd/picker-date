@@ -1,9 +1,8 @@
 {
   "name": "picker-date",
-  "version": "0.0.8",
-  "description": "picker-date",
+  "version": "0.1.0",
+  "description": "Vue3 日期周选择器",
   "main": "picker-date.js",
-  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +11,6 @@
     "picker",
     "vue"
   ],
-  "author": "senyou",
+  "author": "EvanChang",
   "license": "ISC"
 }
