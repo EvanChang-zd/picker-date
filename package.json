@@ -1,7 +1,7 @@
 {
   "name": "picker-date",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue3 日期周选择器",
   "type": "module",
   "scripts": {
@@ -12,8 +12,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@arco-design/web-vue": "^2.55.3",
     "b-tween": "^0.3.3",
     "b-validate": "^1.5.3",
+    "picker-date": "^0.1.0",
     "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
@@ -24,7 +26,7 @@
     "postcss-px-to-viewport": "^1.1.1",
     "senyou-comp-demo": "^0.0.1",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5",
+    "vite": "^5.3.2",
     "vite-plugin-dts": "^3.5.3",
     "vue": "^3.4.31",
     "vue-tsc": "^1.8.5"

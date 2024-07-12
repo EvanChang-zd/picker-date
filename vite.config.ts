@@ -19,6 +19,9 @@ export default defineConfig({
     }),
     dts(),
   ],
+  server:{
+    port:3360
+  },
   build: {
     minify: !false,
     // outDir: "card-animation-comp", // 输出文件名称

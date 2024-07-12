@@ -6,17 +6,62 @@
 
 ~~~js
 <template>
-  <div>
-    <rangePicker mode="quarter" style="width: 254px; margin-bottom: 20px" />
-  </div>
+  <range-picker
+    @change="onChange"
+    @select="onSelect"
+    style="width: 254px; margin-bottom: 20px"
+  />
+  <br />
+  <range-picker
+    mode="week"
+    @change="onChange"
+    @select="onSelect"
+    style="width: 254px; margin-bottom: 20px"
+  />
+  <br />
+  <range-picker
+    mode="month"
+    @change="onChange"
+    @select="onSelect"
+    style="width: 254px; margin-bottom: 20px"
+  />
+  <br />
+  <range-picker
+    mode="year"
+    @change="onChange"
+    @select="onSelect"
+    style="width: 254px; margin-bottom: 20px"
+  />
+  <br />
+  <range-picker
+    mode="quarter"
+    @change="onChange"
+    @select="onSelect"
+    style="width: 254px; margin-bottom: 20px"
+  />
+  <br />
+  <range-picker
+    showTime
+    :time-picker-props="{
+      defaultValue: ['00:00:00', '00:00:00']
+    }"
+    @change="onChange"
+    @select="onSelect"
+    style="width: 380px"
+  />
 </template>
-
 <script setup>
-import { rangePicker, picker, configProvider } from 'picker-date'
+import { rangePicker } from 'picker-date'
 import 'picker-date/style.css'
+const onSelect = (dateString, date) => {
+  console.log('onSelect', dateString, date)
+}
+const onChange = (dateString, date) => {
+  console.log('onChange: ', dateString, date)
+}
 </script>
+<style></style>
 
-<style lang="less" scoped></style>
 ~~~
 
 共暴露三个组件 rangePicker, picker, configProvider

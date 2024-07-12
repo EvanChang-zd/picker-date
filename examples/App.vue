@@ -1,5 +1,4 @@
 <template>
-  <div>
     <rangePicker
     @change="onChange"
     @select="onSelect"
@@ -32,10 +31,15 @@
     mode="quarter"
     @change="onChange"
     @select="onSelect"
+    :popup-visible="isShow"
     style="width: 254px; margin-bottom: 20px"
-  />
-  <br />
-  <configProvider :locale="arEG">
+  >
+  <div ref="el">
+    click
+  </div>
+  </rangePicker>
+  <!--  -->
+  <!-- <configProvider :locale="arEG">
   <rangePicker
     showTime
     :time-picker-props="{
@@ -45,13 +49,15 @@
     @select="onSelect"
     style="width: 380px"
   />
-  </configProvider>
-  </div>
+  </configProvider> -->
 </template>
 
 <script setup>
 import { rangePicker, picker, configProvider, lang} from '../packages/date-picker/index.js'
-import '../packages/date-picker/src/index.css'
+// import { rangePicker, picker, configProvider, lang} from 'picker-date'
+import { onMounted , ref} from 'vue'
+import 'picker-date/style.css'
+import 'picker-date/element.css'
 const arEG = lang['en-US']
 const onSelect = (dateString, date) => {
   console.log('onSelect', dateString, date)
@@ -59,6 +65,10 @@ const onSelect = (dateString, date) => {
 const onChange = (dateString, date) => {
   console.log('onChange: ', dateString, date)
 }
+const el = ref(null)
+let isShow = ref(false)
+onMounted(() => {
+})
 </script>
 
 <style lang="less" scoped></style>
